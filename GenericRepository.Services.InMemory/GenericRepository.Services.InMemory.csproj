@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <PackageId>GenericRepository.Services.InMemory</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ganușceac Vlad</Authors>
+    <Product>GenericRepository.Services.InMemory</Product>
+    <Title>GenericRepository.Services.InMemory</Title>
+    <Description>Implements InMemory version of the GenericRepository's contracts.</Description>
+    <RepositoryUrl>https://github.com/VladGanuscheak/GenericRepository.Services.InMemory</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>generic;repository;genericrepository;.net;dotnet;c#;contracts;services;inmemory</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="GenericRepository.Contracts" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

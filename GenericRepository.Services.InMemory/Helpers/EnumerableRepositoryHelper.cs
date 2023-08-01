@@ -98,11 +98,6 @@ namespace GenericRepository.Services.InMemory.Helpers
             _entities = items;
         }
 
-        public void Remove(Expression<Func<TEntity, bool>> searchClause)
-        {
-            _entities = _entities.Except(_entities.Where(searchClause.Compile()));
-        }
-
         public void Delete(Expression<Func<TEntity, bool>> searchClause)
         {
             _entities = _entities.Except(_entities.Where(searchClause.Compile()));

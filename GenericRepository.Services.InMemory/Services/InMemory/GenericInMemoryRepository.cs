@@ -54,12 +54,6 @@ namespace GenericRepository.Services.InMemory
         }
 
         /// <inheritdoc/>
-        public void Remove([Required] Expression<Func<TEntity, bool>> searchClause)
-        {
-            _helper.Remove(searchClause);
-        }
-
-        /// <inheritdoc/>
         public void Delete([Required] Expression<Func<TEntity, bool>> searchClause)
         {
             _helper.Delete(searchClause);

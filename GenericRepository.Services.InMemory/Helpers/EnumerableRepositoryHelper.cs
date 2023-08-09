@@ -12,7 +12,7 @@ namespace GenericRepository.Services.InMemory.Helpers
 {
     public class EnumerableRepositoryHelper<TEntity> : IGenericRepository<TEntity>
     {
-        private IEnumerable<TEntity> _entities { get; set; }
+        private IEnumerable<TEntity> _entities;
 
         public EnumerableRepositoryHelper(IEnumerable<TEntity> entities)
         {

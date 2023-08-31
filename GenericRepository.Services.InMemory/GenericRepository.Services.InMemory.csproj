@@ -36,6 +36,12 @@
   </ItemGroup>
     
   <ItemGroup>
+    <None Update="GenericRepository_InMemory.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+    
+  <ItemGroup>
     <PackageReference Update="Microsoft.NETCore.App" Version="2.1.30" />
   </ItemGroup>
 

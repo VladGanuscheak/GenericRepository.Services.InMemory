@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <PackageId>GenericRepository.Services.InMemory</PackageId>
-    <Version>2.1.0</Version>
+    <Version>2.2.0</Version>
     <Authors>Ganușceac Vlad</Authors>
     <Product>GenericRepository.Services.InMemory</Product>
     <Title>GenericRepository.Services.InMemory</Title>
@@ -14,7 +14,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>Migrated to .NetCore 2.1</PackageReleaseNotes>
+    <PackageReleaseNotes>Migrated to .NetCore 2.2</PackageReleaseNotes>
     <PackageIcon>logo.png</PackageIcon>
     <PackageIconUrl />
   </PropertyGroup>
@@ -31,7 +31,7 @@
   </ItemGroup>
     
   <ItemGroup>
-    <PackageReference Include="GenericRepository.Contracts" Version="2.1.0" />
+    <PackageReference Include="GenericRepository.Contracts" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
   </ItemGroup>
     
@@ -42,7 +42,7 @@
   </ItemGroup>
     
   <ItemGroup>
-    <PackageReference Update="Microsoft.NETCore.App" Version="2.1.30" />
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.2.8" />
   </ItemGroup>
 
 </Project>

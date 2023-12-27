@@ -9,14 +9,9 @@ using System.Threading.Tasks;
 
 namespace GenericRepository.Services.InMemory
 {
-    public class GenericInMemoryAsyncRepository<TEntity> : IGenericAsyncRepository<TEntity>
+    public class GenericInMemoryAsyncRepository<TEntity>(IEnumerable<TEntity> entities) : IGenericAsyncRepository<TEntity>
     {
-        private GenericInMemoryRepository<TEntity> _repository;
-
-        public GenericInMemoryAsyncRepository(IEnumerable<TEntity> entities)
-        {
-            _repository = new GenericInMemoryRepository<TEntity>(entities);
-        }
+        private readonly GenericInMemoryRepository<TEntity> _repository = new(entities);
 
         /// <inheritdoc/>
         public async Task<TEntity> GetAsync([Required] DataModelOptions<TEntity> options, 

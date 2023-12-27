@@ -8,14 +8,9 @@ using System.Linq.Expressions;
 
 namespace GenericRepository.Services.InMemory
 {
-    public class GenericInMemoryRepository<TEntity> : IGenericRepository<TEntity>
+    public class GenericInMemoryRepository<TEntity>(IEnumerable<TEntity> entities) : IGenericRepository<TEntity>
     {
-        private EnumerableRepositoryHelper<TEntity> _helper;
-
-        public GenericInMemoryRepository(IEnumerable<TEntity> entities)
-        {
-            _helper = new EnumerableRepositoryHelper<TEntity>(entities);
-        }
+        private readonly EnumerableRepositoryHelper<TEntity> _helper = new(entities);
 
         /// <inheritdoc/>
         public TEntity Get([Required] DataModelOptions<TEntity> options)
